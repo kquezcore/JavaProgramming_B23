@@ -10,7 +10,7 @@ public class ApendPosSum {
         int sum = 0;
         ArrayList<Integer> nums2 = new ArrayList<>();
         for (int i = 0; i < nums.size(); i++) {
-            if (nums.get(i) % 2 == 0 && nums.get(i)>0) {
+            if (nums.get(i)>0) {
                 sum += nums.get(i);
                 nums2.addAll(Arrays.asList(nums.get(i)));
             }

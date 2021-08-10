@@ -1,6 +1,6 @@
 package Day31_recapMethods;
 
-import utility.String_Utility;
+import utilities.String_Utility;
 
 public class WarmUpTask2 {
 

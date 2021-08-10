@@ -1,6 +1,6 @@
 package Day36_ArrayList;
 
-import utility.String_Utility;
+import utilities.String_Utility;
 
 import java.util.ArrayList;
 import java.util.Arrays;
