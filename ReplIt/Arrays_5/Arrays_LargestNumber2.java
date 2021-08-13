@@ -16,12 +16,29 @@ public class Arrays_LargestNumber2 {
         }//end for rows
 
         //TODO write your code below
+        int biggest = arr[0][0];
 
+        for (int i = 0; i < arr.length; i++) {
+            int[] each1D = arr[i];
+            for (int j = 0; j < each1D.length; j++) {
+                int currentNumber = each1D[j];
+                if (currentNumber > biggest) {
+                    biggest = currentNumber;
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            int[] each1D = arr[i];
+            for (int j = 0; j < each1D.length; j++) {
+                each1D[j] = biggest;
+            }
+        }
 
         //FINAL PRINT
         System.out.println(Arrays.deepToString(arr));
     }
 }
+
 /*
 Given a 2d array of ints, find the biggest number(integer)
 and replace all array values on biggest number in the array then print an array.
