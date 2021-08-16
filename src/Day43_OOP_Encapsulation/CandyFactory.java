@@ -17,13 +17,13 @@ public class CandyFactory {
                 new Candy("Twix",1,2,false),
                 new Candy("M&M",5,3,true),
                 new Candy("Hersheys",3,5,false),
-                new Candy("Heath",1,2,false)
+                new Candy("Heath",1,0,false)
         ));
 
         //   use for each loop to print the brand and price of each candy
 
         for (Candy eachCandy:candy) {
-            System.out.println(eachCandy.getBrand()+" $"+eachCandy.getPrice());
+            System.out.println(eachCandy);
         }
 
     }
