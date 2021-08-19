@@ -3,7 +3,7 @@ package OOP_8;
 import java.util.Scanner;
 
 public class Calc_II {
-/*
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int one = in.nextInt();
@@ -17,7 +17,7 @@ public class Calc_II {
         System.out.println(a.getResult());
     }
 
- */
+
 }
 
 class Calc {
@@ -25,28 +25,25 @@ class Calc {
     private String names;
     private int x,y,result;
 
-    public int getX() {
-        return x;
+
+    public int getResult() {
+        return result;
     }
+
 
     public void setX(int x) {
         this.x = x;
-    }
-
-    public int getY() {
-        return y;
     }
 
     public void setY(int y) {
         this.y = y;
     }
 
-    public int getResult() {
-        return result;
+    void plus(){
+        result=x+y;
     }
-
-    public void setResult(int result) {
-        this.result = result;
+    void minus(){
+        result=x-y;
     }
 }
 
