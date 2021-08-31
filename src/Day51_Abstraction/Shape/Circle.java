@@ -1,6 +1,8 @@
 package Day51_Abstraction.Shape;
 
 public class Circle extends Shape{
+
+
     private double r;
     public static double PI= 3.14;
 
@@ -8,23 +10,29 @@ public class Circle extends Shape{
         return r;
     }
 
+
     public void setR(double r) {
+        if(r <= 0){
+            throw new RuntimeException("Invalid radius: "+r);
+        }
         this.r = r;
     }
 
-    public Circle(String name, double r) {
+    public Circle( double r) {
         super("Circle");
-        this.r = r;
+        setR(r);
     }
+
 
     @Override
-    public double area(){
-        return r*r*PI;
+    public double area() {
+        return r * r * PI;
     }
-
 
     @Override
     public double perimeter() {
-        return 2 * r* PI;
+        return 2 * r * PI;
     }
+
+
 }
