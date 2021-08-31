@@ -47,6 +47,21 @@ public abstract  class Car {
     }
 
 
-    
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
+    }
+
+
+    public abstract void start(); //meant to be overridden
+
+
+
 
 }
