@@ -8,12 +8,17 @@ public class Tesla extends Car{
     }
 
     // why ()? bc i s a method
-    public void autoPilot(){
 
+    public void autoPilot(){
+        System.out.println("Tesla "+getModel()+" is self driving");
     }
+
 
     @Override
     public void start() {
-
+        System.out.println("------------------------------------");
+        System.out.println("Say \"Start\"");
+        System.out.println("------------------------------------");
     }
+
 }
