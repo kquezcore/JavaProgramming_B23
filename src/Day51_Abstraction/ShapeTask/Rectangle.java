@@ -1,4 +1,4 @@
-package Day51_Abstraction.Shape;
+package Day51_Abstraction.ShapeTask;
 
 public class Rectangle extends Shape{
 
