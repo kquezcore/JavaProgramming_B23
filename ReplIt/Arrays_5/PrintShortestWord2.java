@@ -10,14 +10,6 @@ public class PrintShortestWord2 {
 
         // write your code below
 
-        String smallest = str[0];
-        for (int i = 0; i < str.length; i++) {
-            if (str[i].length() < smallest.length()) {
-                smallest = str[i];
-            }
-        }
-        System.out.println(smallest);
-
     }
 }
 /*
