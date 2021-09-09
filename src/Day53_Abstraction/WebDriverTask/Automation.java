@@ -51,11 +51,33 @@ public class Automation {
         driver4.quit();
 
         System.out.println("-----------------------------------------");
+        // WebDriver driver5 = new WebDriver();
+        //  driver3.get("www.google.com");
 
+        WebDriver driver5 = new OperaDriver();
+        driver5.get("www.amazon.com");
+
+        System.out.println("--------------------------------------");
+
+        WebDriver driver6 = getDriver("firefox");
+
+        //   WebDriver driver7 = new ChromeDriver();
 
 
     }
 
 
+    public static WebDriver getDriver(String name){
 
+        switch (name){
+            case "chrome":
+                return new ChromeDriver();
+
+            case "firefox":
+                return new FirefoxDriver();
+
+            default:
+                throw new RuntimeException("Invalid Browser name");
+        }
+    }
 }
