@@ -2,6 +2,39 @@ package zulpikarsTasks1;
 
 public class Q7String_PasswordValidationTask1 {
 
+    public static void main(String[] args) {
+
+
+        System.out.println(isPasswordValid("Password@"));
+
+
+    }
+    public static boolean isPasswordValid(String password) {
+        boolean hasCorrectLength = password.length() >= 6;
+        boolean hasNoSpace = !password.contains(" ");
+        if (hasCorrectLength && hasNoSpace) {
+            boolean digitFound = false;
+            boolean upperCaseFound = false;
+            boolean lowerCaseFound = false;
+            boolean specialCharacter = false;
+            for (char c : password.toCharArray()) {
+                if (Character.isDigit(c)) {
+                    digitFound = true;
+                }
+                if (Character.isUpperCase(c)) {
+                    upperCaseFound = true;
+                }
+                if (Character.isLowerCase(c)) {
+                    lowerCaseFound = true;
+                }
+                if (!Character.isLetterOrDigit(c)) {
+                    specialCharacter = true;
+                }
+            }
+            return digitFound && upperCaseFound && lowerCaseFound && specialCharacter;
+        }
+        return false;
+    }
 
 }
 /*
