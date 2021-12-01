@@ -2,7 +2,7 @@ package utilities;
 
 import java.util.Arrays;
 
-public class String_Utility {
+public class StringUtility {
 
 
 

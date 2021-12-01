@@ -1,6 +1,6 @@
 package Day31_recapMethods;
 
-import utilities.String_Utility;
+import utilities.StringUtility;
 
 public class WarmUpTask2 {
 
@@ -33,13 +33,13 @@ public class WarmUpTask2 {
 
         String str = "Racecar";
 
-        boolean isPalindrome = String_Utility.isPalindrome(str);
+        boolean isPalindrome = StringUtility.isPalindrome(str);
 
         System.out.println("isPalindrome = " + isPalindrome);
 
         String str2 = "CCYYBBEERRTTEEKK";
 
-        str2 = String_Utility.removeDup(str2);
+        str2 = StringUtility.removeDup(str2);
 
         System.out.println(str2);
 

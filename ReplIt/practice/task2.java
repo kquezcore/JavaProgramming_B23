@@ -17,7 +17,10 @@ public class task2 {
     }
     }
 /*
-Given an int array num of any length, print a new array of its first 2 elements. If the array is smaller than length 2, use whatever elements are present.
+Given an int array num of any length,
+ print a new array of its first 2 elements.
+ If the array is smaller than length 2,
+ use whatever elements are present.
 
 Examples:
 

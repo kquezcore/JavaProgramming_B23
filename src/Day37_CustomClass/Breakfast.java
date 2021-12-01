@@ -1,6 +1,6 @@
 package Day37_CustomClass;
 
-import utilities.String_Utility;
+import utilities.StringUtility;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,7 +59,7 @@ public class Breakfast {
 
    ArrayList<String>List=  new ArrayList<>( Arrays.asList(str.split("")));
 
-        for (String Each:String_Utility.removeDup(str).split("")){
+        for (String Each: StringUtility.removeDup(str).split("")){
             int frequency= Collections.frequency(List,Each);
             result+= Each+frequency;
         }

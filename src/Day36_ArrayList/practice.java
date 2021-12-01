@@ -1,6 +1,6 @@
 package Day36_ArrayList;
 
-import utilities.String_Utility;
+import utilities.StringUtility;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,7 +51,7 @@ public class practice {
 
         System.out.println( words);
 
-        words.removeIf( p -> String_Utility.isPalindrome(p) ); //if the string is palindrome, then remove it from the arraylist
+        words.removeIf( p -> StringUtility.isPalindrome(p) ); //if the string is palindrome, then remove it from the arraylist
 
         System.out.println( words);
 
